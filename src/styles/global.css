@@ -5,10 +5,10 @@
 @theme {
   --color-background: #0a0a0a;
   --color-card-background: #141414;
-  --color-card-border: 27272a;
+  --color-card-border: #27272a;
   --color-footer: #050505;
   --color-accent: #0a84ff;
-  --color-text-main: #ffffff;
+  --color-text-primary: #ffffff;
   --color-text-secondary: #d4d4d8;
   --color-text-tertiary: #a1a1aa;
   --color-text-tags: #71717a;
