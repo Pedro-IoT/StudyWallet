@@ -1,24 +1,28 @@
 import { Link, LinkComponentProps } from '@tanstack/react-router';
 import { ButtonHTMLAttributes, ReactNode } from 'react';
-
 export const getButtonStyles = (
-  variant: 'primary' | 'secondary' = 'primary',
+  variant: 'primary' | 'secondary' | 'navPrimary' | 'navSecondary' = 'primary',
   className: string = ''
 ) => {
   const baseStyles =
-    'rounded-full font-semibold transition-all duration-200 px-6 py-2 flex items-center justify-center active:scale-95 disabled:opacity-50 disabled:pointer-events-none';
+    'rounded-full transition-all duration-200 flex items-center justify-center active:scale-95 disabled:opacity-50 disabled:pointer-events-none font-semibold';
 
   const variantStyles = {
-    primary: 'text-text-primary bg-accent hover:brightness-110 shadow-sm',
+    primary: 'bg-accent hover:brightness-110 shadow-sm px-6 py-2',
     secondary:
-      'text-text-primary bg-zinc-900 border border-zinc-800 hover:bg-zinc-800 hover:border-zinc-700',
+      'text-text-primary bg-zinc-900 border border-zinc-800 hover:bg-zinc-800 hover:border-zinc-700 px-6 py-2',
+    navPrimary:
+      'bg-white text-black px-4 py-2 rounded-full text-sm hover:bg-zinc-200 transition-colors shadow-[0_0_15px_rgba(255,255,255,0.2)]',
+
+    navSecondary:
+      'text-sm font-medium text-zinc-300 hover:text-white transition-colors',
   };
 
   return `${baseStyles} ${variantStyles[variant]} ${className}`.trim();
 };
 
 interface BaseProps {
-  variant?: 'primary' | 'secondary';
+  variant?: 'primary' | 'secondary' | 'navPrimary' | 'navSecondary';
   children: ReactNode;
 }
 
