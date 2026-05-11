@@ -2,19 +2,19 @@ import { LuLibrary, LuMap, LuBookOpen, LuActivity } from 'react-icons/lu';
 
 export const Mockup = () => {
   return (
-    <div className="animate-fade-in-up relative mx-auto mt-24 max-w-4xl opacity-0 delay-300">
-      <div className="glass overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+    <div className="animate-fade-in-up relative mx-auto mt-32 max-w-5xl opacity-0 delay-300">
+      <div className="glass overflow-hidden rounded-[2.5rem] border border-white/10 shadow-[0_0_80px_rgba(255,255,255,0.05)]">
         {/* Toolbar/Header Mock */}
-        <div className="flex items-center gap-2 border-b border-white/5 bg-white/5 px-4 py-3">
-          <div className="flex gap-1.5">
-            <div className="h-2.5 w-2.5 rounded-full bg-red-500/50"></div>
-            <div className="h-2.5 w-2.5 rounded-full bg-yellow-500/50"></div>
-            <div className="h-2.5 w-2.5 rounded-full bg-green-500/50"></div>
+        <div className="flex items-center gap-3 border-b border-white/5 bg-white/5 px-6 py-4">
+          <div className="flex gap-2">
+            <div className="h-3 w-3 rounded-full bg-red-500/50"></div>
+            <div className="h-3 w-3 rounded-full bg-yellow-500/50"></div>
+            <div className="h-3 w-3 rounded-full bg-green-500/50"></div>
           </div>
-          <div className="mx-auto h-4 w-32 rounded bg-white/5"></div>
+          <div className="mx-auto h-4 w-40 rounded bg-white/5"></div>
         </div>
 
-        <div className="flex min-h-100">
+        <div className="flex min-h-[32rem]">
           {/* Sidebar Mock */}
           <div className="hidden w-1/4 border-r border-white/5 p-4 sm:block">
             <div className="mb-8 space-y-4">

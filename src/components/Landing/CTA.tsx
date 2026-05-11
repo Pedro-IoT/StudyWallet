@@ -2,13 +2,13 @@ import { Button } from '@/components/Button/Button';
 
 export const CTA = () => {
   return (
-    <section className="relative overflow-hidden border-t border-white/5 py-24">
+    <section className="relative overflow-hidden border-t border-white/5 py-32 sm:py-48">
       <div className="bg-accent/5 absolute inset-0"></div>
-      <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
-        <h2 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl">
+      <div className="relative z-10 mx-auto max-w-5xl px-4 text-center sm:px-6">
+        <h2 className="mb-8 text-5xl font-extrabold tracking-tight sm:text-7xl">
           Pronto para organizar sua mente?
         </h2>
-        <p className="mb-10 text-xl text-zinc-400">
+        <p className="mb-12 text-2xl font-medium text-zinc-400">
           Pare de perder informações valiosas. Comece a construir seu patrimônio
           intelectual hoje mesmo.
         </p>

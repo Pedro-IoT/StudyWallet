@@ -21,12 +21,12 @@ export const Landing = () => {
 
       <Header />
 
-      <main className="relative flex min-h-[95vh] flex-col justify-center overflow-hidden px-6 pt-32 pb-20 sm:pt-40 sm:pb-32">
+      <main className="relative flex min-h-[95vh] flex-col justify-center overflow-hidden px-4 pt-40 pb-24 sm:px-6 sm:pt-48 sm:pb-40 lg:px-8">
         {/* Gradient Overlay */}
         <div className="from-background/60 via-background/40 to-background absolute inset-0 z-0 bg-linear-to-b"></div>
 
         <div className="relative z-10 mx-auto max-w-5xl text-center">
-          <h1 className="animate-fade-in-up mb-6 text-5xl font-bold tracking-tight opacity-0 delay-100 sm:text-6xl md:text-7xl">
+          <h1 className="animate-fade-in-up mb-8 text-5xl font-extrabold tracking-tighter opacity-0 delay-100 sm:text-7xl md:text-8xl">
             Seu maior ativo é o seu conhecimento.{' '}
             <br className="hidden lg:block" />
             <span className="text-gradient drop-shadow-lg">
@@ -34,7 +34,7 @@ export const Landing = () => {
             </span>
           </h1>
 
-          <p className="animate-fade-in-up mx-auto mt-6 max-w-2xl text-lg leading-relaxed font-light text-zinc-300 opacity-0 drop-shadow-md delay-200 sm:text-xl">
+          <p className="animate-fade-in-up mx-auto mt-8 max-w-3xl text-xl leading-relaxed font-medium text-zinc-400 opacity-0 drop-shadow-md delay-200 sm:text-2xl">
             Transforme o caos da informação em uma carteira de estudos
             organizada. A liberdade do Notion unida ao foco que sua evolução
             exige.

@@ -8,13 +8,13 @@ import {
 
 export const Features = () => {
   return (
-    <section id="recursos" className="px-6 py-24">
-      <div className="mx-auto max-w-6xl">
-        <div className="mb-16 text-center">
-          <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-5xl">
+    <section id="recursos" className="px-4 py-32 sm:px-6 lg:px-8 lg:py-48">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-24 text-center">
+          <h2 className="mb-6 text-4xl font-extrabold tracking-tight sm:text-6xl">
             Projetado para o foco absoluto.
           </h2>
-          <p className="mx-auto max-w-2xl text-lg text-zinc-400">
+          <p className="mx-auto max-w-3xl text-xl font-medium text-zinc-400">
             Chega de dezenas de abas abertas e anotações perdidas em cadernos
             diferentes. Centralize sua evolução.
           </p>
@@ -22,15 +22,15 @@ export const Features = () => {
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {/* Card 1: Acervo */}
-          <div className="glass group relative overflow-hidden rounded-3xl border border-zinc-800 p-8 transition-colors hover:border-zinc-700 md:col-span-1">
-            <div className="absolute top-0 right-0 p-6 opacity-10 transition-opacity group-hover:opacity-20">
-              <LuLibrary size={100} strokeWidth={1} />
+          <div className="glass group relative overflow-hidden rounded-[2.5rem] border border-zinc-800 p-10 transition-colors hover:border-zinc-700 md:col-span-1">
+            <div className="absolute top-0 right-0 p-8 opacity-10 transition-opacity group-hover:opacity-20">
+              <LuLibrary size={120} strokeWidth={1} />
             </div>
-            <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl border border-zinc-800 bg-zinc-900">
-              <span className="text-accent text-lg font-bold">01</span>
+            <div className="mb-8 flex h-14 w-14 items-center justify-center rounded-2xl border border-zinc-800 bg-zinc-900">
+              <span className="text-accent text-xl font-bold">01</span>
             </div>
-            <h3 className="mb-3 text-2xl font-semibold">O Acervo</h3>
-            <p className="text-sm leading-relaxed text-zinc-400">
+            <h3 className="mb-4 text-3xl font-semibold">O Acervo</h3>
+            <p className="text-base leading-relaxed text-zinc-400">
               Sua Biblioteca Central. Salve vídeos do YouTube, artigos, PDFs e
               cursos. Classifique o que você já consumiu e o que está na fila.
               Tudo visual, limpo e organizado.
@@ -38,14 +38,14 @@ export const Features = () => {
           </div>
 
           {/* Card 2: Cérebro (Destaque) */}
-          <div className="glass relative flex flex-col items-center gap-8 overflow-hidden rounded-3xl border border-zinc-800 p-8 transition-colors hover:border-zinc-700 sm:flex-row md:col-span-2">
+          <div className="glass relative flex flex-col items-center gap-10 overflow-hidden rounded-[2.5rem] border border-zinc-800 p-10 transition-colors hover:border-zinc-700 sm:flex-row md:col-span-2">
             <div className="from-accent/5 absolute inset-0 z-0 bg-linear-to-br to-transparent"></div>
             <div className="relative z-10 flex-1">
-              <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl border border-zinc-800 bg-zinc-900">
-                <span className="text-accent text-lg font-bold">02</span>
+              <div className="mb-8 flex h-14 w-14 items-center justify-center rounded-2xl border border-zinc-800 bg-zinc-900">
+                <span className="text-accent text-xl font-bold">02</span>
               </div>
-              <h3 className="mb-3 text-2xl font-semibold">O Cérebro</h3>
-              <p className="mb-6 text-sm leading-relaxed text-zinc-400">
+              <h3 className="mb-4 text-3xl font-semibold">O Cérebro</h3>
+              <p className="mb-8 text-base leading-relaxed text-zinc-400">
                 Crie cadernos inteligentes dentro de cada fonte. Anote por
                 capítulos, salve timestamps exatos de aulas e conecte insights
                 de diferentes matérias como um segundo cérebro.
@@ -77,15 +77,15 @@ export const Features = () => {
           </div>
 
           {/* Card 3: O Mapa */}
-          <div className="glass relative overflow-hidden rounded-3xl border border-zinc-800 p-8 text-center transition-colors hover:border-zinc-700 sm:p-12 md:col-span-3">
+          <div className="glass relative overflow-hidden rounded-[2.5rem] border border-zinc-800 p-10 text-center transition-colors hover:border-zinc-700 sm:p-16 md:col-span-3">
             <div className="relative z-10 mx-auto max-w-3xl">
-              <div className="mx-auto mb-6 flex h-12 w-12 items-center justify-center rounded-xl border border-zinc-800 bg-zinc-900">
-                <span className="text-accent text-lg font-bold">03</span>
+              <div className="mx-auto mb-8 flex h-14 w-14 items-center justify-center rounded-2xl border border-zinc-800 bg-zinc-900">
+                <span className="text-accent text-xl font-bold">03</span>
               </div>
-              <h3 className="mb-4 text-2xl font-semibold sm:text-3xl">
+              <h3 className="mb-6 text-3xl font-semibold sm:text-4xl">
                 O Mapa de Objetivos
               </h3>
-              <p className="mb-8 text-lg leading-relaxed text-zinc-400">
+              <p className="mb-10 text-xl leading-relaxed text-zinc-400">
                 Trilhas de aprendizado visual. Quer passar no ENEM? Quer se
                 tornar Desenvolvedor Sênior? Crie um objetivo macro, divida em
                 pequenos checkpoints e veja sua barra de progresso encher.
