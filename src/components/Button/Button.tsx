@@ -5,7 +5,7 @@ export const getButtonStyles = (
   className: string = ''
 ) => {
   const baseStyles =
-    'rounded-full transition-all duration-200 flex items-center justify-center active:scale-95 disabled:opacity-50 disabled:pointer-events-none font-semibold';
+    'rounded-full transition-all duration-200 flex items-center justify-center active:scale-95 disabled:opacity-50 disabled:pointer-events-none font-semibold cursor-pointer';
 
   const variantStyles = {
     primary: 'bg-accent hover:brightness-110 shadow-sm px-6 py-2',

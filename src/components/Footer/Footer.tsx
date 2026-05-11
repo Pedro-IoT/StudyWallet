@@ -19,21 +19,21 @@ export const Footer = () => {
         <div className="flex gap-4 text-zinc-500">
           <a
             href="#"
-            className="hover:text-white transition-colors"
+            className="transition-colors hover:text-white"
             aria-label="Facebook"
           >
             <FaFacebook size={20} />
           </a>
           <a
             href="#"
-            className="hover:text-white transition-colors"
+            className="transition-colors hover:text-white"
             aria-label="Instagram"
           >
             <FaInstagram size={20} />
           </a>
           <a
             href="#"
-            className="hover:text-white transition-colors"
+            className="transition-colors hover:text-white"
             aria-label="GitHub"
           >
             <FaGithub size={20} />

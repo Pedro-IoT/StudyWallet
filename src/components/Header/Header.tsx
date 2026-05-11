@@ -1,7 +1,11 @@
 import { Button } from '@/components/Button/Button';
 import { GiWallet } from 'react-icons/gi';
 
-export const Header = ({ variant = 'full' }: { variant?: 'full' | 'simple' }) => {
+export const Header = ({
+  variant = 'full',
+}: {
+  variant?: 'full' | 'simple';
+}) => {
   return (
     <header
       role="banner"
@@ -49,7 +53,11 @@ export const Header = ({ variant = 'full' }: { variant?: 'full' | 'simple' }) =>
               <Button to="/login" aria-label="Login" variant="navSecondary">
                 Login
               </Button>
-              <Button to="/cadastro" aria-label="Cadastre-se" variant="navPrimary">
+              <Button
+                to="/cadastro"
+                aria-label="Cadastre-se"
+                variant="navPrimary"
+              >
                 Cadastre-se
               </Button>
             </div>

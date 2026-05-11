@@ -12,8 +12,16 @@ vi.mock('@/components/Footer/Footer', () => ({
 }));
 
 vi.mock('@/components/Button/Button', () => ({
-  Button: ({ children, type }: { children: React.ReactNode; type?: string }) => (
-    <button data-testid="mock-button" type={type as any}>
+  Button: ({
+    children,
+    type,
+    disabled,
+  }: {
+    children: React.ReactNode;
+    type?: string;
+    disabled?: boolean;
+  }) => (
+    <button data-testid="mock-button" type={type as any} disabled={disabled}>
       {children}
     </button>
   ),
@@ -23,6 +31,11 @@ vi.mock('@tanstack/react-router', () => ({
   Link: ({ children, to }: { children: React.ReactNode; to: string }) => (
     <a href={to}>{children}</a>
   ),
+  useNavigate: () => vi.fn(),
+}));
+
+vi.mock('@/store/useAuthStore', () => ({
+  useAuthStore: (fn: any) => fn({ setAuth: vi.fn() }),
 }));
 
 describe('Register Page', () => {
@@ -34,8 +47,11 @@ describe('Register Page', () => {
     expect(screen.getByText(/Crie sua conta/i)).toBeInTheDocument();
     expect(screen.getByLabelText(/Nome completo/i)).toBeInTheDocument();
     expect(screen.getByLabelText(/E-mail/i)).toBeInTheDocument();
-    expect(screen.getByLabelText(/Senha/i)).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: /Criar minha Carteira/i })).toBeInTheDocument();
+    expect(screen.getByLabelText(/^Senha$/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/Confirmar Senha/i)).toBeInTheDocument();
+    expect(
+      screen.getByRole('button', { name: /Criar minha Carteira/i })
+    ).toBeInTheDocument();
   });
 
   it('should have a link to login page', () => {

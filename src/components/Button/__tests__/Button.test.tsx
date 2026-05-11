@@ -28,19 +28,25 @@ describe('Polymorphic Button component', () => {
 
     it('should apply variant data attributes for styling hooks', () => {
       const { rerender } = render(<Button variant="primary">Primary</Button>);
-      expect(screen.getByRole('button')).toHaveAttribute('data-variant', 'primary');
+      expect(screen.getByRole('button')).toHaveAttribute(
+        'data-variant',
+        'primary'
+      );
 
       rerender(<Button variant="secondary">Secondary</Button>);
-      expect(screen.getByRole('button')).toHaveAttribute('data-variant', 'secondary');
+      expect(screen.getByRole('button')).toHaveAttribute(
+        'data-variant',
+        'secondary'
+      );
     });
 
     it('should be clickable and trigger events', async () => {
       const handleClick = vi.fn();
       render(<Button onClick={handleClick}>Click Me</Button>);
-      
+
       const element = screen.getByRole('button');
       element.click();
-      
+
       expect(handleClick).toHaveBeenCalledTimes(1);
     });
 
@@ -55,15 +61,19 @@ describe('Polymorphic Button component', () => {
     it('should render as an anchor tag when "to" prop is provided', () => {
       render(<Button to="/dashboard">Go to Dashboard</Button>);
       const element = screen.getByRole('link', { name: /dashboard/i });
-      
+
       expect(element.tagName).toBe('A');
       expect(element).toHaveAttribute('href', '/dashboard');
     });
 
     it('should maintain consistent styling with standard buttons', () => {
-      render(<Button to="/test" variant="secondary">Link Button</Button>);
+      render(
+        <Button to="/test" variant="secondary">
+          Link Button
+        </Button>
+      );
       const element = screen.getByRole('link');
-      
+
       expect(element).toHaveAttribute('data-variant', 'secondary');
       // Verify common button classes are present
       expect(element.className).toContain('rounded-full');
