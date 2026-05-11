@@ -36,9 +36,13 @@ describe('Header component', () => {
 
     it('should render the main navigation links', () => {
       render(<Header variant="full" />);
-      expect(screen.getByRole('link', { name: /recursos/i })).toBeInTheDocument();
+      expect(
+        screen.getByRole('link', { name: /recursos/i })
+      ).toBeInTheDocument();
       expect(screen.getByRole('link', { name: /método/i })).toBeInTheDocument();
-      expect(screen.getByRole('link', { name: /público/i })).toBeInTheDocument();
+      expect(
+        screen.getByRole('link', { name: /público/i })
+      ).toBeInTheDocument();
     });
 
     it('should render the login and signup actions', () => {
@@ -63,12 +67,16 @@ describe('Header component', () => {
 
     it('should NOT render the main navigation links', () => {
       render(<Header variant="simple" />);
-      expect(screen.queryByRole('link', { name: /recursos/i })).not.toBeInTheDocument();
+      expect(
+        screen.queryByRole('link', { name: /recursos/i })
+      ).not.toBeInTheDocument();
     });
 
     it('should NOT render the login and signup actions', () => {
       render(<Header variant="simple" />);
-      expect(screen.queryByRole('link', { name: /login/i })).not.toBeInTheDocument();
+      expect(
+        screen.queryByRole('link', { name: /login/i })
+      ).not.toBeInTheDocument();
       expect(
         screen.queryByRole('link', { name: /cadastre-se/i })
       ).not.toBeInTheDocument();
